@@ -26,6 +26,7 @@ const defaultOptions = {
   responseLengthBuckets: [],
   normalizePath: [],
   customLabels: [],
+  urlValueParser: null,
   transformLabels: null,
   normalizeStatus: true,
 };
