@@ -28,7 +28,7 @@ function normalizePath(req, options) {
         throw new Error('Bad tuple provided in normalizePath option, expected: [regex, replacement]');
       }
       const regex = typeof tuple[0] === 'string' ? RegExp(tuple[0]) : tuple[0];
-      if(regex.has(path)) {
+      if(regex.test(path)) {
         path = path.replace(regex, tuple[1]);
         break;
       }
