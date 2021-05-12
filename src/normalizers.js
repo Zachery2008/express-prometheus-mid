@@ -34,11 +34,13 @@ function normalizePath(req, options) {
       }
     }
   }
-
+  /*
   if (!urlValueParser) {
     urlValueParser = new UrlValueParser(options && options.urlValueParser);
   }
   return urlValueParser.replacePathValues(path);
+  */
+ return path;
 };
 
 /**
